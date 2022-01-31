@@ -1,4 +1,8 @@
-﻿using System;
+﻿/*I took 3.5 hrs to complete the assignment. This assignment has served
+as propeller kit for someone who hasn't been coding for a while. Though I haven't written the code in the most efficient way possible, I learnt time complexities and how they work through this assignment. 
+I am sure that this experience helps me with future assignments. */
+
+using System;
 using System.Collections.Generic;
 namespace DIS_Assignmnet1_SPRING_2022
 {
@@ -80,6 +84,10 @@ namespace DIS_Assignmnet1_SPRING_2022
 
         //   String is iterated in for loop and if the character is not in vowels array, it is 
          //   concatenated to the empty string final_string and if it is a vowel, the string isn't changed
+
+         /*   This took me 45 min. I tried writing without using Index method, but the code became a tad too long.
+          * Should try writing optimized code without using predefined functions.
+          */
             private static string RemoveVowels(string s)
             {   
                 
@@ -92,8 +100,8 @@ namespace DIS_Assignmnet1_SPRING_2022
                     for (int i = 0; i < s.Length; i++)
                     {
 
-                        int index = Array.IndexOf(vowels, s[i]); //returns the index of character if it's in vowels array
-                        if (index > -1)   //if the character is in vowels array
+                        int index = Array.IndexOf(vowels, s[i]); 
+                        if (index > -1)   
                         {
 
                             final_string = final_string;
@@ -140,6 +148,9 @@ namespace DIS_Assignmnet1_SPRING_2022
              *  bull_string1 is looped in foreach and appended to bull_string11 and every character in bull_string2
              * is appended to bull_string22. Then both bull_string11 and bull_String22 are compared and if they are
              * same then True is returned, else false is returned.
+             
+             * This took me 40 min. I did better with this without using predefined functions
+             *
              */
             private static bool ArrayStringsAreEqual(string[] bulls_string1, string[] bulls_string2)
             {
@@ -198,6 +209,9 @@ namespace DIS_Assignmnet1_SPRING_2022
              * inside the nested foreach is equal with the integer which is looped on the outer for loop. If the 
              * count is 0, it means that the integer is unique and the integer is appened to add_list and add_list
              * is returned
+             
+
+             *This took me 50 min. This is not optimized code. Should try writing a better one
              */
             private static int SumOfUnique(int[] bull_bucks)
             {
@@ -260,7 +274,8 @@ namespace DIS_Assignmnet1_SPRING_2022
          * array bulls_grid3. For the reverse diagonal, the same thing is done. If the concatenated index is
          * present in the array bulls_grid3, that element is avoided and rest of the element is added to the count
          * and count is returned.
-    
+            
+        *This took me an hour. Logic could have been better and code should have been crisp.
          */
         private static int DiagonalSum(int[,] bulls_grid)
             {
@@ -332,7 +347,10 @@ namespace DIS_Assignmnet1_SPRING_2022
          *Empty string bulls_stringg is initialised.  Through while loop, indexes of every integer element
          *present in array is taken. The integer element is taken as index for bulls_string and character 
          * in that index is added to empty string bulls_Stringg
-         * 
+         
+
+         * I took 25 min for this. This is better compared to other programs
+         *
          */
         private static string RestoreString(string bulls_string, int[] indices)
             {
@@ -389,6 +407,8 @@ namespace DIS_Assignmnet1_SPRING_2022
          * ch is obtained via for loop and count. The string is reversed via for loop and concatenated with
          * prefix_string and rest of the string is concatenated to prefix _string via while loop.
          * If the element doesn't exist in given string break the loop.
+         * 
+         * This took me an hour. Could've done better with time complexity and logic
          * 
          */
 
